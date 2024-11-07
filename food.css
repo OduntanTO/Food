@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background: #acb4b5;
+}
+.hero {
+    height: 100vh;
+    width: 100;
+    background-image: url(fru.jpg);
+    background-position: center;
+    background-size:cover ;
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #213032;
+    margin-right: 40px;
+}
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+}
+.nav-bar ul li a{
+    display: block;
+    color: #edffef;
+    font-size: 20px;
+    padding: 8px 25px;
+    transition: .2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover {
+    background-color:#97a2a3 ;
+    color: #213032;
+    cursor: pointer;
+}
+.content {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-50%);
+    
+}
+h1 {
+    color: #032225;
+    font-size: 75px;
+    margin-top:20px 0px 20px ;
+}
+h3 {
+    color: #1d291e;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h4 {
+    color: #1d241d;
+    font-size: 20px;
+    letter-spacing: 20x;
+}
+.button {
+    position: absolute;
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    padding: 13px 30px;
+    transform: .4s;
+}
+.button:hover {
+    background-color: #97a2a3;
+    color: #213032;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.section {
+    width: 100;
+    height: 100vh;
+    background-color: rgb(18, 37, 18);
+    background-position: center;
+    background-size:cover ;
+    border-radius: 20px;
+}
+.about {
+    position: absolute;
+    left: 40%;
+    align-items: center;
+    font-size: 50px;
+    font-family: sans-serif;
+    color: #b2babb;
+    font-weight: bold;
+    padding-top:50px ;
+
+}
+
+.note {
+    text-align: calc(12);
+    font-size: 15px;
+    color: #b2babb;
+    justify-content: right;
+    position: relative;
+    top: -300px;
+    left: 600px;
+}
+/*Recipe Section CSS*/
+.recipe {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #213032;
+}
+.recipe h2 {
+    color: #c7cec8;
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+    
+}
+.box .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box .card .cont {
+    position: absolute;
+    bottom: 50px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #edffef;
+    color: #182f32;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.box .card:hover .cont {
+    opacity: 1;
+}
+.card h3 {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #213032;
+}
+.box .card p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.box .card button {
+    position: relative;
+    background-color: #213032;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid black;
+    font-weight: bold;
+    transform: .4s;
+    padding: 13px;
+}
+.box .card button:hover {
+    background-color: #3b5b5e;
+    color: #213032;
+}
+section {
+    width: 100;
+    height: 100vh;
+    background-color: rgb(93, 112, 93);
+    background-position: center;
+    background-size:cover ;
+    border-radius: 20px;
+}
+.contact-info {
+    width: 50px;
+}
+.contact-info h2 {
+    position: absolute;
+    left: 20%;
+    align-items: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #b2babb;
+    font-weight: bold;
+    padding-top:50px ;   
+}
+.book {
+    position: absolute;
+    left: 20%;
+    margin-top: 120px;
+    align-items: center;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #ebf2f3 ; 
+    padding: 12px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.contact-form {
+    width: 200px; 
+    position: absolute;
+    left: 50%;
+    padding-top:70px
+}
+form {
+    padding: 10px
+}
+.contact-form button:hover {
+    border: 2px solid black;
+    cursor: pointer;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.social.icons {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    color: #97a2a3;
+    text-align: center;
+    line-height: 40px;
+    font-size: 38px;
+}
